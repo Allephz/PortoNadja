@@ -1,5 +1,20 @@
 import React from 'react';
-import { ExternalLink, Github, Database, BarChart3, ShoppingCart, Users, Figma, Monitor, Globe, Video, Settings } from 'lucide-react';
+import { 
+  Github, 
+  Database, 
+  Figma, 
+  Monitor, 
+  Globe, 
+  Video, 
+  Settings 
+} from 'lucide-react';
+
+import burger from '../images/burger.png';
+import prismatech from '../images/prismatech.jpg';
+import kopirot from '../images/kopirot.png';
+import mars12 from '../images/mars12.png';
+import epicor from '../images/epicor.png';
+import gui from '../images/gui.png';
 
 const Projects = () => {
   const projects = [
@@ -9,7 +24,7 @@ const Projects = () => {
       technologies: ["Epicor ERP", "Production Planning", "Inventory Management", "Finance Integration", "Supply Chain"],
       category: "Enterprise System",
       icon: <Settings className="text-blue-400" size={24} />,
-      image: "/images/prismatech.jpg",
+      image: prismatech,
       features: [
         "End-to-end production lifecycle management from sales to delivery",
         "Integrated workflows covering purchasing, production planning, and inventory",
@@ -25,7 +40,7 @@ const Projects = () => {
       technologies: ["Figma", "User Research", "Wireframing", "Prototyping"],
       category: "UI/UX Design",
       icon: <Figma className="text-blue-400" size={24} />,
-      image: "/images/burger.png",
+      image: burger,
       features: [
         "Comprehensive user research and persona development",
         "Complete user flow mapping and information architecture",
@@ -34,24 +49,22 @@ const Projects = () => {
       ],
       challenges: "Balanced aesthetic appeal with usability principles while ensuring optimal conversion rates and user engagement.",
       github: "https://www.figma.com/design/puh8snFJCz5LlKHzDs3yle/Burger-Store?node-id=0-1&t=H1c5DzWlZM1sSEku-1",
-      
     },
     {
-      title: "Web Application",
-      description: "This was my first project creating a homepage for the “Kopi & Roti” website using HTML and CSS. The page features a background image of bread and coffee, a top navigation bar (Home, Products, Contact, About, Location, Account), a call-to-action button, promotional text, and visual elements like the logo and social media icons.",
+      title: "Web Application – Kopi & Roti",
+      description: "This was my first project creating a homepage for the “Kopi & Roti” website using HTML and CSS. The page features a background image of bread and coffee, a top navigation bar, a call-to-action button, promotional text, and visual elements like the logo and social media icons.",
       technologies: ["HTML", "CSS", "JavaScript", "Java","Authentication"],
       category: "Web Application",
       icon: <Globe className="text-blue-400" size={24} />,
-      image: "/images/kopirot.png",
+      image: kopirot,
       features: [
         "Responsive frontend design with modern CSS and HTML",
-        "Clean UI design with intuitive navigation menu (Home, Products, Contact,)",
+        "Clean UI design with intuitive navigation menu",
         "Secure user authentication and profile management system",
-        "First personal project as a beginner in frontend developmente"
+        "First personal project as a beginner in frontend development"
       ],
       challenges: "Integrated real-time messaging capabilities while maintaining security and performance across different user sessions.",
       github: "https://github.com/Allephz/html-project.git",
-     
     },
     {
       title: "Java Swing - GUI",
@@ -59,7 +72,7 @@ const Projects = () => {
       technologies: ["Java", "Swing", "OOP Principles", "GUI Design", "Eclipse"],
       category: "Desktop Application",
       icon: <Monitor className="text-blue-400" size={24} />,
-      image: "/images/gui.png",
+      image: gui,
       features: [
         "Clean object-oriented architecture with modular class design",
         "User-friendly GUI with intuitive navigation and controls",
@@ -72,19 +85,18 @@ const Projects = () => {
     {
       title: "WEB-Mars",
       description: "A personal web project about Planet Mars built with HTML, CSS, and JavaScript. The site features an immersive design to present engaging facts about Mars, demonstrating a strong foundation in web development.",
-      technologies: [" HTML", "CSS", "JavaScript", " React", "Next.js"],
+      technologies: ["HTML", "CSS", "JavaScript", "React", "Next.js"],
       category: "Website Page Application",
       icon: <Video className="text-blue-400" size={24} />,
-      image: "/images/mars12.png",
+      image: mars12,
       features: [
         "Immersive Visual Design",
         "Intuitive Navigation",
         "Informational Content",
         "Clear Call-to-Action (CTA)"
       ],
-      challenges: "The project involved overcoming key technical hurdles, including resolving dependency conflicts and Module not found errors, correctly configuring the Next.js development environment, and implementing a proper asset management strategy for images, all of which were crucial for successfully building the final UI.",
+      challenges: "The project involved overcoming key technical hurdles, including resolving dependency conflicts and Module not found errors, correctly configuring the Next.js development environment, and implementing a proper asset management strategy for images.",
       github: "https://github.com/Allephz/Web-Mars.git",
-     
     },
     {
       title: "ERP Simulation – Epicor Training",
@@ -92,7 +104,7 @@ const Projects = () => {
       technologies: ["Epicor ERP", "Production Management", "Purchase Requisitions", "Sales Operations", "Inventory Control"],
       category: "ERP Simulation",
       icon: <Database className="text-blue-400" size={24} />,
-      image: "/images/epicor.png",
+      image: epicor,
       features: [
         "Complete production order lifecycle management",
         "Integrated purchase requisition and procurement processes",
@@ -112,7 +124,7 @@ const Projects = () => {
           <div className="w-24 h-1 bg-blue-400 mx-auto mb-6"></div>
           <p className="text-gray-400 text-lg max-w-3xl mx-auto">
             Showcasing comprehensive solutions that demonstrate expertise in system development, 
-            data analytics, and business process optimization
+            data analytics, and business process optimization.
           </p>
         </div>
 
@@ -132,17 +144,14 @@ const Projects = () => {
                     className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                    <div className="flex gap-4">
-                      <a 
-                        href={project.github}
-                        className="bg-white/20 backdrop-blur-sm p-3 rounded-full hover:bg-white/30 transition-colors"
-                      >
-                        <Github size={24} className="text-white" />
-                      </a>
-                      <a 
-                      >
-                      </a>
-                    </div>
+                    <a 
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="bg-white/20 backdrop-blur-sm p-3 rounded-full hover:bg-white/30 transition-colors"
+                    >
+                      <Github size={24} className="text-white" />
+                    </a>
                   </div>
                 </div>
               </div>
@@ -190,16 +199,12 @@ const Projects = () => {
                 <div className="flex gap-4 pt-4">
                   <a 
                     href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="flex items-center gap-2 px-6 py-2 border border-gray-600 text-gray-300 rounded-lg hover:border-gray-400 hover:text-white transition-all duration-300"
                   >
                     <Github size={20} />
                     View Code
-                  </a>
-                  <a 
-
-                  >
-
-                    
                   </a>
                 </div>
               </div>
@@ -212,3 +217,4 @@ const Projects = () => {
 };
 
 export default Projects;
+
