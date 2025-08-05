@@ -9,7 +9,7 @@ const Projects = () => {
       technologies: ["Epicor ERP", "Production Planning", "Inventory Management", "Finance Integration", "Supply Chain"],
       category: "Enterprise System",
       icon: <Settings className="text-blue-400" size={24} />,
-      image: "/images/Prismatech.jpg",
+      image: "/images/prismatech.jpg",
       features: [
         "End-to-end production lifecycle management from sales to delivery",
         "Integrated workflows covering purchasing, production planning, and inventory",
@@ -25,7 +25,7 @@ const Projects = () => {
       technologies: ["Figma", "User Research", "Wireframing", "Prototyping"],
       category: "UI/UX Design",
       icon: <Figma className="text-blue-400" size={24} />,
-      image: "/images/Burger.png",
+      image: "/images/burger.png",
       features: [
         "Comprehensive user research and persona development",
         "Complete user flow mapping and information architecture",
@@ -59,7 +59,7 @@ const Projects = () => {
       technologies: ["Java", "Swing", "OOP Principles", "GUI Design", "Eclipse"],
       category: "Desktop Application",
       icon: <Monitor className="text-blue-400" size={24} />,
-      image: "/images/GUI.png",
+      image: "/images/gui.png",
       features: [
         "Clean object-oriented architecture with modular class design",
         "User-friendly GUI with intuitive navigation and controls",
@@ -75,7 +75,7 @@ const Projects = () => {
       technologies: [" HTML", "CSS", "JavaScript", " React", "Next.js"],
       category: "Website Page Application",
       icon: <Video className="text-blue-400" size={24} />,
-      image: "/images/Mars12.png",
+      image: "/images/mars12.png",
       features: [
         "Immersive Visual Design",
         "Intuitive Navigation",
