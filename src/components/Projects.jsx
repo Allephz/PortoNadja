@@ -70,7 +70,7 @@ const Projects = () => {
       title: "Java Swing - GUI",
       description: "Object-oriented desktop application built with Java Swing, featuring modular architecture and user-friendly GUI design.",
       technologies: ["Java", "Swing", "OOP Principles", "GUI Design", "Eclipse"],
-      category: "Desktop Application",
+      category: "GUI Application",
       icon: <Monitor className="text-blue-400" size={24} />,
       image: gui,
       features: [
