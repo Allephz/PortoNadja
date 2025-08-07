@@ -29,8 +29,8 @@ const Skills = () => {
       skills: [
         { name: 'UI Design', level: 90 },
         { name: 'UX Research', level: 85 },
-        { name: 'Figma (Prototyping)', level: 90 },
-        { name: 'raphic Design (Canva, Illustrator, Etc)', level: 90 },
+        { name: 'Figma (Prototyping,wireframing,etc)', level: 90 },
+        { name: 'graphic Design (Canva, Illustrator, Etc)', level: 90 },
       ],
     },
     {

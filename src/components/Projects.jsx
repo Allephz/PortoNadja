@@ -37,7 +37,7 @@ const Projects = () => {
     {
       title: "UI/UX Design – Marketing Website",
       description: "Designed a comprehensive responsive marketing website focusing on modern UI/UX standards, user research, and conversion optimization.",
-      technologies: ["Figma", "User Research", "Wireframing", "Prototyping"],
+      technologies: ["Figma", "Visual Design", "Wireframing", "Prototyping"],
       category: "UI/UX Design",
       icon: <Figma className="text-blue-400" size={24} />,
       image: burger,
@@ -53,7 +53,7 @@ const Projects = () => {
     {
       title: "Web Application – Kopi & Roti",
       description: "This was my first project creating a homepage for the “Kopi & Roti” website using HTML and CSS. The page features a background image of bread and coffee, a top navigation bar, a call-to-action button, promotional text, and visual elements like the logo and social media icons.",
-      technologies: ["HTML", "CSS", "JavaScript", "Java","Authentication"],
+      technologies: ["HTML", "CSS", "Landing Page Design", "UI Design",],
       category: "Web Application",
       icon: <Globe className="text-blue-400" size={24} />,
       image: kopirot,
@@ -85,7 +85,7 @@ const Projects = () => {
     {
       title: "WEB-Mars",
       description: "A personal web project about Planet Mars built with HTML, CSS, and JavaScript. The site features an immersive design to present engaging facts about Mars, demonstrating a strong foundation in web development.",
-      technologies: ["HTML", "CSS", "JavaScript", "React", "Next.js"],
+      technologies: ["HTML", "CSS", "JavaScript", "React", "Node.js"],
       category: "Website Page Application",
       icon: <Video className="text-blue-400" size={24} />,
       image: mars12,
